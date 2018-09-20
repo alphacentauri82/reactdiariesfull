@@ -1,0 +1,79 @@
+@import '~assets/stylesheets/sass/variables';
+
+.btn {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  background-color: $gray-xxs;
+  color: $gray-xxxl;
+  transition: background-color .6s;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  border-radius: $size-default;
+  padding: 5px 10px;
+  box-shadow: inset 2px 2px 28px -12px rgba(0,0,0,1);
+}
+
+.btn:hover, .btn:focus {
+  background-color: $gray-xl;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  line-height: 1.5;
+}
+
+.btn:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+  border-radius: 90%;
+  background-color: rgba(236, 240, 241, .3);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  transition: width .1s ease-in-out, padding-top .1s ease-in-out;
+}
+
+.link {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: $primary-default;
+  text-decoration: underline;
+  margin: 0;
+  box-shadow: none;
+}
+
+.link:hover, .link:focus {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: $primary-complementary;
+  text-decoration: underline;
+  margin: 0;
+  box-shadow: none;
+}
+
+.danger {
+  background-color: $error-default;
+  color: $white;
+}
+
+.danger:hover {
+  background-color: $error-complementary;
+  color: $white;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "school-diaries-reactjs",
+  "version": "1.0.0",
+  "dependencies": {
+    "accept-language": "^3.0.17",
+    "cookie": "^0.3.1",
+    "express": "^4.15.2",
+    "isomorphic-fetch": "^2.2.1",
+    "material-ui": "^0.18.3",
+    "next": "^2.3.1",
+    "next-redux-wrapper": "^1.1.2",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-cookie": "^2.0.7",
+    "react-dom": "^15.5.4",
+    "react-intl": "^2.3.0",
+    "react-jsonschema-form": "^0.48.2",
+    "react-redux": "^5.0.4",
+    "react-tap-event-plugin": "^2.0.0",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "redux-thunk": "^2.2.0",
+    "styled-components": "^1.4.6",
+    "universal-cookie": "^2.0.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}

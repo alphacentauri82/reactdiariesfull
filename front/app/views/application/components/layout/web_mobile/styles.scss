@@ -1,0 +1,133 @@
+@import "~assets/stylesheets/sass/variables.scss";
+
+.content {
+  height: 100%;
+}
+
+.sitePusher,
+.siteContainer {
+  height: 100%;
+}
+
+.siteContainer,
+.publicSiteContent {
+  overflow: hidden;
+}
+
+.sitePusher {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.siteContent,
+.publicSiteContent {
+  background-color: $gray-xs;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.childrenContainer {
+  padding-top: 32px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.header,
+.publicHeader {
+  position: static;
+  height: 50px;
+  color: $gray-xxxs;
+  background-color: $gray-xxxl;
+}
+
+.headerContent {
+  display: inline-block;
+  height: 100%;
+  width: calc(100% - 52px);
+}
+
+.headerShowIcon {
+  color: $action;
+  display: inline-block;
+  width: 52px;
+  font-size: 20px;
+  padding: 12px 15px 11px 15px;
+}
+
+.headerHideIcon {
+  color: $action;
+  display: inline-block;
+  width: 52px;
+  font-size: 20px;
+  padding: 12px 15px 11px 15px;
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $white;
+  width: 262px;
+  -webkit-transform: translateX(-262px);
+  transform: translateX(-262px);
+}
+
+.withSidebar {
+  .headerShowIcon {
+    display: none;
+  }
+  .headerHideIcon {
+    display: inline-block;
+  }
+  .sitePusher {
+    -webkit-transform: translateX(262px);
+    transform: translateX(262px);
+  }
+  .siteCache {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (min-width: 780px){
+  .sitePusher {
+    -webkit-transform: translateX(262px);
+    transform: translateX(262px);
+  }
+
+  .headerContent {
+    width: 100%;
+  }
+
+  .header {
+    width: calc(100% - 262px);
+  }
+
+  .siteContent {
+    width: calc(100% - 262px);
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+
+  .headerShowIcon {
+    display: none;
+  }
+
+  .childrenContainer {
+    margin-top: 24px;
+  }
+
+}

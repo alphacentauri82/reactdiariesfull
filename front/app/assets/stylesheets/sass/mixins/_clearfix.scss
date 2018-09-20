@@ -1,0 +1,13 @@
+@mixin clearfix() {
+  &:after {
+    content: " ";
+    display: table;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  *zoom:1; // IE HACK
+}

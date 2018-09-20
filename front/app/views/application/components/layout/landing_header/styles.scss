@@ -1,0 +1,28 @@
+@import "~assets/stylesheets/sass/variables.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: calc(100% + 52px);
+}
+
+.title {
+  align-self: center;
+  margin: 0 8px;
+}
+
+.navigation {
+  align-self: center;
+}
+
+.link {
+  padding: 8px;
+}
+
+.active {
+  background-color: $gray-xxxs !important;
+  color: $gray-xxxl !important;
+  padding: 8px;
+}

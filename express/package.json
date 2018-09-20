@@ -1,0 +1,27 @@
+{
+  "name": "school-diaries-express",
+  "version": "1.0.0",
+  "description": "School Diaries Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn lint && node index.js",
+    "lint": "standard"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "author": "Damian Taborda <damian.taborda@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "standard": "^10.0.1"
+  }
+}
